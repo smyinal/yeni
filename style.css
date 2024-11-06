@@ -77,12 +77,12 @@
 
 /* QR Kodu 1 Konumu (üstte) */
 .qr-code1-container {
-    bottom: 10%; /* Alt kısımdan yukarıya doğru mesafe */
+    bottom: 30%; /* Alt kısımdan yukarıya doğru mesafe */
 }
 
 /* QR Kodu 2 Konumu (altta) */
 .qr-code2-container {
-    bottom: 3%; /* QR kodları arasında boşluk bırakmak için */
+    bottom: 25%; /* QR kodları arasında boşluk bırakmak için */
 }
 
 /* QR Kodları Boyutu */
