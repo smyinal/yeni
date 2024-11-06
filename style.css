@@ -50,7 +50,7 @@
     width: 300px;
     height: auto;
     z-index: 5;
-    animation: moveCar 9s linear infinite;
+    animation: moveCar 8,5s linear infinite;
 }
 
 /* Araba görseli */
@@ -65,7 +65,7 @@
         left: 100%;
     }
     100% {
-        left: -70px;
+        left: -100px;
     }
 }
 /* Müzik Butonu */
