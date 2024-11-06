@@ -50,7 +50,7 @@
     width: 150px;
     height: auto;
     z-index: 5;
-    animation: moveCar 5s linear infinite;
+    animation: moveCar 12s linear infinite;
 }
 
 /* Araba görseli */
