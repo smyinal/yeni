@@ -145,3 +145,29 @@
         padding: 6px 12px; /* Butonun boyutunu artır */
     }
 }
+/* Uzun görselin container'ı */
+.scrollable-image {
+    position: relative; /* Konumlandırma için */
+    width: 100%;
+    overflow: hidden; /* Taşma durumunu engeller */
+}
+
+/* Yorum alanı */
+.comment-section {
+    position: absolute; /* Görselin üstüne konumlandırma */
+    top: 50%; /* Yorum kısmını görselin ortasına yerleştir */
+    left: 50%; /* Yorum kısmını yatayda ortala */
+    transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
+    background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
+    padding: 20px; /* İç boşluk */
+    border-radius: 5px; /* Kenar yuvarlama */
+    z-index: 10; /* Yorum alanını görselin üstüne getir */
+}
+
+/* Mobil uyumlu yorum alanı */
+@media (max-width: 768px) {
+    .comment-section {
+        padding: 15px; /* Mobilde daha küçük padding */
+        width: 80%; /* Genişlik mobilde biraz daraltılabilir */
+    }
+}
