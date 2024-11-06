@@ -64,9 +64,7 @@
     }
     100% {
         left: -100px; /* Soldan çıkmasını sağla */
-    }
-}
-
+   }
 }
 /* Müzik Butonu */
 .audio-container {
