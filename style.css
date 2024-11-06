@@ -68,47 +68,6 @@
         left: -30px;
     }
 }
-/* QR Kodu Konumlandırma */
-.qr-code1-container, .qr-code2-container {
-    position: absolute; /* Konumlandırma için */
-    right: 10%; /* Sağ tarafa hizalamak için */
-    z-index: 10; /* QR kodlarını diğer öğelerin üstüne getir */
-}
-
-/* QR Kodu 1 Konumu (üstte) */
-.qr-code1-container {
-    bottom: 200px; /* Alt kısımdan 200px yukarıya al */
-}
-
-/* QR Kodu 2 Konumu (altta) */
-.qr-code2-container {
-    bottom: 200px; /* Alt kısımdan 200px yukarıya al */
-}
-
-/* QR Kodları Boyutu */
-.qr-code1, .qr-code2 {
-    width: 50px; /* QR kodlarının boyutu */
-    height: auto;
-}
-
-/* Mobildeki QR Kodlarının Boyutunu Küçültme */
-@media (max-width: 768px) {
-    .qr-code1, .qr-code2 {
-        width: 80px; /* Mobilde QR kodlarının boyutunu arttır */
-    }
-
-    .qr-code1-container, .qr-code2-container {
-        right: 5%; /* Mobilde daha yakın konumlandırma */
-    }
-
-    .qr-code1-container {
-        bottom: 200px; /* Mobilde de yukarı al */
-    }
-
-    .qr-code2-container {
-        bottom: 200px; /* Mobilde de yukarı al */
-    }
-}
 /* Müzik Butonu */
 .audio-container {
     position: fixed;
@@ -146,7 +105,7 @@
     .comment-section {
         width: 50%; 
         margin: 0 auto; 
-        font-size: 0.6em; 
+        font-size: 0.5em; 
     }
 
     .comment-input, .comment-submit {
@@ -179,11 +138,11 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 380%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 375%; /* Yorum kısmını görselin ortasına yerleştir */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
-    padding: 20px; /* İç boşluk */
+    padding: 15px; /* İç boşluk */
     border-radius: 5px; /* Kenar yuvarlama */
     z-index: 10; /* Yorum alanını görselin üstüne getir */
 }
@@ -192,6 +151,6 @@
 @media (max-width: 568px) {
     .comment-section {
         padding: 15px; /* Mobilde daha küçük padding */
-        width: 80%; /* Genişlik mobilde biraz daraltılabilir */
+        width: 60%; /* Genişlik mobilde biraz daraltılabilir */
     }
 }
