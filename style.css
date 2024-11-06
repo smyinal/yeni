@@ -152,9 +152,9 @@
     }
 
     .comment-section {
-        width: 90%; 
+        width: 50%; 
         margin: 0 auto; 
-        font-size: 0.9em; 
+        font-size: 0.6em; 
     }
 
     .comment-input, .comment-submit {
