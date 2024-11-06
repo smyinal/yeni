@@ -138,19 +138,23 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 82%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 75%; /* Yorum kısmını biraz daha üstte konumlandır */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
-    padding: 15px; /* İç boşluk */
+    padding: 10px; /* Daha küçük iç boşluk */
     border-radius: 5px; /* Kenar yuvarlama */
     z-index: 10; /* Yorum alanını görselin üstüne getir */
+    width: 40%; /* Yorum alanının genişliğini daralt */
+    font-size: 0.9em; /* Yazı boyutunu küçült */
 }
 
 /* Mobil uyumlu yorum alanı */
 @media (max-width: 768px) {
     .comment-section {
-        padding: 15px; /* Mobilde daha küçük padding */
-        width: 60%; /* Genişlik mobilde biraz daraltılabilir */
+        padding: 8px; /* Mobilde daha küçük padding */
+        width: 70%; /* Mobilde genişliği biraz genişlet */
+        font-size: 0.8em; /* Mobilde yazı boyutunu küçült */
+        top: 85%; /* Mobilde daha yüksek konum */
     }
 }
