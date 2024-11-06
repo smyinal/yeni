@@ -79,6 +79,7 @@
 .qr-code1-container {
     top: 220%; /* Yüzde olarak konum belirleyebilirsiniz */
     left: 65%; /* Yatayda sol tarafa yerleştir */
+    transform: translateX(-50%); /* Sağ tarafa tam hizalamak için */
 }
 
 .qr-code1 {
