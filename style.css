@@ -68,56 +68,47 @@
         left: -30px;
     }
 }
-
 /* QR Kodu Konumlandırma */
 .qr-code1-container, .qr-code2-container {
     position: absolute; /* Konumlandırma için */
+    right: 10%; /* Sağ tarafa hizalamak için */
     z-index: 10; /* QR kodlarını diğer öğelerin üstüne getir */
 }
 
-/* QR Kodu 1 Konumu */
+/* QR Kodu 1 Konumu (üstte) */
 .qr-code1-container {
-    top: 220%; /* Yüzde olarak konum belirleyebilirsiniz */
-    left: 65%; /* Yatayda sol tarafa yerleştir */
-    transform: translateX(-50%); /* Sağ tarafa tam hizalamak için */
+    bottom: 10%; /* Alt kısımdan yukarıya doğru mesafe */
 }
 
-.qr-code1 {
-    width: 50px; /* QR kodunun boyutu */
-    height: auto;
-}
-
-/* QR Kodu 2 Konumu */
+/* QR Kodu 2 Konumu (altta) */
 .qr-code2-container {
-    top: 200%; /* Yüzde olarak daha aşağıya yerleştir */
-    left: 65%; /* Sağ tarafa yerleştir */
-    transform: translateX(-50%); /* Sağ tarafa tam hizalamak için */
+    bottom: 3%; /* QR kodları arasında boşluk bırakmak için */
 }
 
-.qr-code2 {
-    width: 50px; /* QR kodunun boyutu */
+/* QR Kodları Boyutu */
+.qr-code1, .qr-code2 {
+    width: 50px; /* QR kodlarının boyutu */
     height: auto;
 }
 
-/* Responsive Mobil Tasarım */
+/* Mobildeki QR Kodlarının Boyutunu Küçültme */
 @media (max-width: 768px) {
     .qr-code1, .qr-code2 {
-        width: 80px; /* Mobilde QR kodlarının boyutunu küçült */
+        width: 80px; /* Mobilde QR kodlarının boyutunu arttır */
     }
 
-    /* Mobilde QR kodlarını daha uygun yerlere yerleştirme */
+    .qr-code1-container, .qr-code2-container {
+        right: 5%; /* Mobilde daha yakın konumlandırma */
+    }
+
     .qr-code1-container {
-        top: 10%; /* Daha üst kısımlara taşı */
-        left: 5%; /* Sol tarafa daha yakın */
+        bottom: 8%;
     }
 
     .qr-code2-container {
-        top: 50%; /* Daha orta kısıma yerleştir */
-        left: 95%; /* Sağ tarafa yakın */
-        transform: translateX(-100%); /* Sağdan tam hizalamak için */
+        bottom: 3%;
     }
 }
-
 /* Müzik Butonu */
 .audio-container {
     position: fixed;
