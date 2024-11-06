@@ -55,7 +55,7 @@
 
 /* Araba görseli */
 .moving-car {
-    width: 100%; 
+    width: 200%; 
     height: auto; 
     animation: moveCar 5s linear infinite; 
 }
