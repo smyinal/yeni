@@ -71,18 +71,50 @@
 
 /* QR Kodu Konumlandırma */
 .qr-code1-container, .qr-code2-container {
-    position: absolute;
-    z-index: 10;
+    position: absolute; /* Konumlandırma için */
+    z-index: 10; /* QR kodlarını diğer öğelerin üstüne getir */
+}
+
+/* QR Kodu 1 Konumu */
+.qr-code1-container {
+    top: 20%; /* Yüzde olarak konum belirleyebilirsiniz */
+    left: 10%; /* Yatayda sol tarafa yerleştir */
 }
 
 .qr-code1 {
-    width: 150px; 
-    height: auto; 
+    width: 150px; /* QR kodunun boyutu */
+    height: auto;
+}
+
+/* QR Kodu 2 Konumu */
+.qr-code2-container {
+    top: 60%; /* Yüzde olarak daha aşağıya yerleştir */
+    left: 80%; /* Sağ tarafa yerleştir */
+    transform: translateX(-50%); /* Sağ tarafa tam hizalamak için */
 }
 
 .qr-code2 {
-    width: 150px;
+    width: 150px; /* QR kodunun boyutu */
     height: auto;
+}
+
+/* Responsive Mobil Tasarım */
+@media (max-width: 768px) {
+    .qr-code1, .qr-code2 {
+        width: 80px; /* Mobilde QR kodlarının boyutunu küçült */
+    }
+
+    /* Mobilde QR kodlarını daha uygun yerlere yerleştirme */
+    .qr-code1-container {
+        top: 10%; /* Daha üst kısımlara taşı */
+        left: 5%; /* Sol tarafa daha yakın */
+    }
+
+    .qr-code2-container {
+        top: 50%; /* Daha orta kısıma yerleştir */
+        left: 95%; /* Sağ tarafa yakın */
+        transform: translateX(-100%); /* Sağdan tam hizalamak için */
+    }
 }
 
 /* Müzik Butonu */
