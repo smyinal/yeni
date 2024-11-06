@@ -148,7 +148,7 @@
     /* Araba ve Yorum Alanının Mobilde Konumlandırılması */
     .car-container {
         width: 80px; 
-        bottom: -2400px; 
+        bottom: -2420px; 
     }
 
     .comment-section {
@@ -187,7 +187,7 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 385%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 380%; /* Yorum kısmını görselin ortasına yerleştir */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
@@ -197,7 +197,7 @@
 }
 
 /* Mobil uyumlu yorum alanı */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     .comment-section {
         padding: 15px; /* Mobilde daha küçük padding */
         width: 80%; /* Genişlik mobilde biraz daraltılabilir */
