@@ -45,9 +45,9 @@
 /* Araba animasyon alanı */
 .car-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     right: 20px;
-    width: 600px;
+    width: 300px;
     height: auto;
     z-index: 5;
     animation: moveCar 12s linear infinite;
@@ -155,7 +155,7 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 50%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 150%; /* Yorum kısmını görselin ortasına yerleştir */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
