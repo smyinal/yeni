@@ -63,7 +63,7 @@
         left: 100%; /* Sağdan başlat */
     }
     100% {
-        left: -250px; /* Soldan çıkmasını sağla */
+        left: -300px; /* Soldan çıkmasını sağla */
    }
 }
 /* Müzik Butonu */
