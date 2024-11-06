@@ -13,11 +13,11 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 50%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 650%; /* Yorum kısmını görselin ortasına yerleştir */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
-    padding: 20px; /* İç boşluk */
+    padding: 30px; /* İç boşluk */
     border-radius: 5px; /* Kenar yuvarlama */
     z-index: 10; /* Yorum alanını görselin üstüne getir */
 }
@@ -61,7 +61,8 @@
     top: 0; /* Görselin üst kısmında başlayacak */
     width: 1000px; /* Arabanın genişliği */
     height: 1000px; /* Arabanın yüksekliği */
-    animation: moveCar 5s linear infinite; /* Sürekli hareket */
+    animation: moveCar 10s linear infinite; /* Sürekli hareket */
+   z-index: 10; /* Yorum alanını görselin üstüne getir */
 }
 
 /* Sağdan sola hareket animasyonu */
