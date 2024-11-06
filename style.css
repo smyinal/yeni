@@ -1,0 +1,147 @@
+/* Ana görsel */
+.scrollable-image {
+    width: 100%; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.long-image {
+    width: 100%; 
+    display: block;
+}
+
+/* Yorum alanı */
+.comment-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.comment-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-list {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Araba animasyon alanı */
+.car-container {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    z-index: 5;
+    animation: moveCar 5s linear infinite;
+}
+
+/* Araba görseli */
+.moving-car {
+    width: 100%; 
+    height: auto; 
+    animation: moveCar 5s linear infinite; 
+}
+
+@keyframes moveCar {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -2500px;
+    }
+}
+
+/* QR Kodu Konumlandırma */
+.qr-code1-container, .qr-code2-container {
+    position: absolute;
+    z-index: 10;
+}
+
+.qr-code1 {
+    width: 150px; 
+    height: auto; 
+}
+
+.qr-code2 {
+    width: 150px;
+    height: auto;
+}
+
+/* Müzik Butonu */
+.audio-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+#audio-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .long-image {
+        height: auto;
+    }
+
+    /* QR Kodlarını Mobilde Küçültme */
+    .qr-code1, .qr-code2 {
+        width: 80px;
+    }
+
+    /* Araba ve Yorum Alanının Mobilde Konumlandırılması */
+    .car-container {
+        width: 80px; 
+        bottom: 50px; 
+    }
+
+    .comment-section {
+        width: 90%; 
+        margin: 0 auto; 
+        font-size: 0.9em; 
+    }
+
+    .comment-input, .comment-submit {
+        width: 100%; 
+    }
+}
+.delete-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .delete-button {
+        font-size: 14px; /* Butonun yazı boyutunu küçült */
+        padding: 6px 12px; /* Butonun boyutunu artır */
+    }
+}

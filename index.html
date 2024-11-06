@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Web Tasarımı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Uzun görselin yer alacağı bölüm -->
+    <section class="scrollable-image">
+        <img src="images/uzun-gorsel.jpg" alt="Uzun Görsel" class="long-image">
+    
+        <div class="qr-code1-container">
+            <a href="https://www.google.com/maps/place/%C3%9Csk%C3%BCdar+Nikah+Saray%C4%B1" target="_blank">
+                <img src="images/üsküdarqr.png" alt="QR Kodu" class="qr-code1">
+            </a>
+        </div>
+
+        <div class="qr-code2-container">
+            <a href="https://www.google.com.tr/maps/place/Salon+Marmaris" target="_blank">
+                <img src="images/salonmarmarisqr.png" alt="QR Kodu" class="qr-code2">
+            </a>
+        </div>
+    </section>
+
+    <!-- Müzik Kontrolü -->
+    <div class="audio-container">
+        <audio id="background-music" src="music/valse.mp3" preload="auto"></audio>
+        <button id="toggle-music" onclick="toggleMusic()">Müziği Aç/Kapat</button>
+    </div>
+
+    <!-- Yorumlar alanı -->
+    <div class="comment-section">
+        <h2>Yorum Yapın</h2>
+        <form id="commentForm">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" placeholder="İsminizi girin" required>
+
+            <label for="surname">Soyisim:</label>
+            <input type="text" id="surname" name="surname" placeholder="Soyisminizi girin" required>
+
+            <label for="comment">Yorum:</label>
+            <input type="text" id="comment" class="comment-input" placeholder="Yorum yapın..." required>
+            
+            <button type="submit" class="comment-submit">Gönder</button>
+        </form>
+        <div class="comments-list"></div>
+    </div>
+
+    <!-- Araba animasyon alanı -->
+    <div class="car-container">
+        <img src="images/araba.png" alt="Hareket Eden Araba" class="moving-car">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
