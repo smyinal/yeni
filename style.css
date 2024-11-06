@@ -116,7 +116,7 @@
     /* Araba ve Yorum Alanının Mobilde Konumlandırılması */
     .car-container {
         width: 80px; 
-        bottom: 50px; 
+        bottom: -2500px; 
     }
 
     .comment-section {
@@ -155,7 +155,7 @@
 /* Yorum alanı */
 .comment-section {
     position: absolute; /* Görselin üstüne konumlandırma */
-    top: 150%; /* Yorum kısmını görselin ortasına yerleştir */
+    top: 700%; /* Yorum kısmını görselin ortasına yerleştir */
     left: 50%; /* Yorum kısmını yatayda ortala */
     transform: translate(-50%, -50%); /* Yorum kısmını tam ortalar */
     background-color: rgba(255, 255, 255, 0.8); /* Yorum alanının arka planı */
