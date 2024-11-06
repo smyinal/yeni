@@ -77,24 +77,24 @@
 
 /* QR Kodu 1 Konumu */
 .qr-code1-container {
-    top: 20%; /* Yüzde olarak konum belirleyebilirsiniz */
-    left: 10%; /* Yatayda sol tarafa yerleştir */
+    top: 220%; /* Yüzde olarak konum belirleyebilirsiniz */
+    left: 65%; /* Yatayda sol tarafa yerleştir */
 }
 
 .qr-code1 {
-    width: 150px; /* QR kodunun boyutu */
+    width: 50px; /* QR kodunun boyutu */
     height: auto;
 }
 
 /* QR Kodu 2 Konumu */
 .qr-code2-container {
-    top: 60%; /* Yüzde olarak daha aşağıya yerleştir */
-    left: 80%; /* Sağ tarafa yerleştir */
+    top: 200%; /* Yüzde olarak daha aşağıya yerleştir */
+    left: 65%; /* Sağ tarafa yerleştir */
     transform: translateX(-50%); /* Sağ tarafa tam hizalamak için */
 }
 
 .qr-code2 {
-    width: 150px; /* QR kodunun boyutu */
+    width: 50px; /* QR kodunun boyutu */
     height: auto;
 }
 
