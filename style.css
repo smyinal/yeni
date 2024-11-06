@@ -47,7 +47,7 @@
     position: absolute;
     bottom: 100px;
     right: 20px;
-    width: 150px;
+    width: 300px;
     height: auto;
     z-index: 5;
     animation: moveCar 12s linear infinite;
@@ -65,7 +65,7 @@
         left: 100%;
     }
     100% {
-        left: -1000px;
+        left: -000px;
     }
 }
 
