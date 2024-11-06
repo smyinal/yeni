@@ -99,7 +99,7 @@
     /* Araba ve Yorum Alanının Mobilde Konumlandırılması */
     .car-container {
         width: 80px; 
-        bottom: -200px; 
+        bottom: 10px; 
     }
 
     .comment-section {
