@@ -41,7 +41,6 @@
     margin-top: 15px;
     text-align: left;
 }
-
 /* Araba animasyon alanı */
 .car-container {
     position: absolute;
@@ -50,23 +49,24 @@
     width: 300px;
     height: auto;
     z-index: 5;
-    animation: moveCar 8,5s linear infinite;
+    animation: moveCar 8.5s linear infinite; /* 8,5s yerine 8.5s olarak düzeltildi */
 }
 
 /* Araba görseli */
 .moving-car {
     width: 200%; 
-    height: auto; 
-    animation: moveCar 5s linear infinite; 
+    height: auto;
 }
 
 @keyframes moveCar {
     0% {
-        left: 100%;
+        left: 100%; /* Sağdan başlat */
     }
     100% {
-        left: -100px;
+        left: -100px; /* Soldan çıkmasını sağla */
     }
+}
+
 }
 /* Müzik Butonu */
 .audio-container {
